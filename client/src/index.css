@@ -1,0 +1,186 @@
+/* Container for the entire video call */
+.video-call-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+/* Header for the video call */
+h2 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Section for the call actions (start or join call) */
+.call-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Input for call ID */
+.call-id-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 14px;
+}
+
+/* Start call and join call buttons */
+.start-call-btn,
+.join-call-btn {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 220px;
+}
+
+.start-call-btn:hover,
+.join-call-btn:hover {
+  background-color: #45a049;
+}
+
+/* Container for the video streams */
+.video-call-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Call ID display */
+.call-id-display {
+  font-size: 16px;
+  color: #333;
+}
+
+.call-id-display span {
+  font-weight: bold;
+}
+
+/* Video containers */
+.video-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.local-video,
+.remote-video {
+  width: 45%;
+  max-height: 350px;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+/* Buttons for sharing screen and ending call */
+.share-screen-btn,
+.stop-sharing-btn,
+.end-call-btn {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.share-screen-btn:hover,
+.stop-sharing-btn:hover,
+.end-call-btn:hover {
+  background-color: #1e88e5;
+}
+
+/* Chat box section */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Chat messages list */
+.chat-box {
+  max-height: 300px;
+  overflow-y: scroll;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.chat-message {
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 15px;
+  margin-bottom: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.chat-message.sender {
+  background-color: #e1ffc7;
+  align-self: flex-start;
+}
+
+.chat-message.receiver {
+  background-color: #d1e7ff;
+  align-self: flex-end;
+}
+
+/* Input for typing messages */
+.chat-input-container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.chat-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+.chat-input:focus {
+  border-color: #4CAF50;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.send-btn:hover {
+  background-color: #45a049;
+}

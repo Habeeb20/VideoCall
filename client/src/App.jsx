@@ -4,8 +4,8 @@ import VideoCall from "./VideoCall";
 const App = () => (
     <Router>
         <Routes>
-            <Route path="/" element={<h2>Welcome to Video Call App</h2>} />
-            <Route path="/call" element={<VideoCall />} />
+        
+            <Route path="/" element={<VideoCall />} />
         </Routes>
     </Router>
 );
